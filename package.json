@@ -1,0 +1,33 @@
+{
+  "name": "react-video-app1",
+  "version": "1.0.0",
+  "description": "MERN Video App using MongoDB, Express, React and Node",
+  "main": "index.js",
+  "author": "Julissa Gazca",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run front --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.3",
+    "multer": "^1.4.2",
+    "react-redux": "^7.2.3",
+    "socket.io": "4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
